@@ -1,8 +1,14 @@
 ARG FROM_IMAGE=madmanfred/qt-webassembly
 ARG FROM_TAG=qt5.15-em1.39.8
+ARG CMAKE_VERSION=3.21.0
 
 # Based on trzeci/emscripten
 FROM ${FROM_IMAGE}:${FROM_TAG}
+
+# Download & install cmake
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0-linux-x86_64.tar.gz  && \
+    tar -zxvf cmake-3.21.0-linux-x86_64.tar.gz -C /usr/local --strip-components=1                     && \
+    rm cmake-3.21.0-linux-x86_64.tar.gz
 
 # - Create an alias of cmake that run "emcmake cmake".
 # This will set by default the emscripten toolchain
