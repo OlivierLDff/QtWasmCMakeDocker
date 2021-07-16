@@ -1,5 +1,7 @@
 # 🌍 Qt Webassembly CMake
 
+[![🐳 Publish Docker image](https://github.com/OlivierLDff/QtWasmCMakeDocker/actions/workflows/main.yml/badge.svg)](https://github.com/OlivierLDff/QtWasmCMakeDocker/actions/workflows/main.yml)
+
 A complete container that is required to compile CMake based C++/Qt application with [Emscripten](http://emscripten.org/) and [Qt for WebAssembly](https://doc.qt.io/qt-5/wasm.html). 
 
 This project is based on [madmanfred/qt-webassembly](https://hub.docker.com/r/madmanfred/qt-webassembly).
