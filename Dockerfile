@@ -1,7 +1,7 @@
 ARG FROM_IMAGE=madmanfred/qt-webassembly
 ARG FROM_TAG=qt5.15-em1.39.8
 
-# Based on trzeci/emscripten
+# Based on trzeci/emscripten
 FROM ${FROM_IMAGE}:${FROM_TAG}
 
 # - Create an alias of cmake that run "emcmake cmake".
