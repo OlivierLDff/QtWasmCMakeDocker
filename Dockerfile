@@ -1,5 +1,8 @@
+ARG FROM_IMAGE=madmanfred/qt-webassembly
+ARG FROM_TAG=qt5.15-em1.39.10
+
 # Based on trzeci/emscripten
-FROM madmanfred/qt-webassembly:qt5.15-em1.39.10
+FROM ${FROM_IMAGE}:${FROM_TAG}
 
 # - Create an alias of cmake that run "emcmake cmake".
 # This will set by default the emscripten toolchain
